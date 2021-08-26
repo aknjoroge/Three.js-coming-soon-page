@@ -17,6 +17,8 @@
 
 ---
 
+<br/>
+
 <h2 id="description">Description</h2>
 
 The project has two html files : <br/>
@@ -36,6 +38,8 @@ The file structure is explained [here](#files)
 
 ---
 
+<br/>
+
 <h2 id="Packages">Packages</h2>
 
 - node-sass for scss compilation
@@ -43,11 +47,28 @@ The file structure is explained [here](#files)
 - three.js libary
 - tween.js for three.js camera animation
 
+```javascript
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "purgecss": "^4.0.3",
+    "three": "^0.130.1",
+    "tween.js": "^16.6.0"
+  }
+```
+
+- dat.gui provides a GUI for changing three.js variable for development mode
+
+```javascript
+"devDependencies": { "dat.gui": "^0.7.7"  }
+```
+
+<br/>
+
 ---
+
+<br/>
 
 <h2 id="files">File structure</h2>
-
----
 
 ## 1. assets folder
 
@@ -94,6 +115,8 @@ contains the production files used by index.html, including the purged css.
 
 ---
 
+<br/>
+
 <h1 id="Installation">Installation</h1>
 
 install by running
@@ -106,19 +129,24 @@ install by running
 
 <h2 id="Code">Code</h2>
 
+<br/>
+
 ### Email
 
 change the destination email in the email.php file<br/>
 
 > location
 
-`Techkey\php\email.php` for index.php<br/> > `assets\php\email.php` for developmentMarkUp.html
+`Techkey\php\email.php` for index.php<br/> <br/>
+`assets\php\email.php` for developmentMarkUp.html
 
 Edit the line and put in your email
 
 ```php
 $to = 'info@techkey.co.ke';
 ```
+
+<br/>
 
 ### Animation
 
@@ -137,6 +165,8 @@ new TWEEN.Tween(animateModel)
   })
   .start();
 ```
+
+<br/>
 
 ### Css
 
@@ -159,6 +189,8 @@ node-sass is run through npm scripts, the scripts are in the package.json file
 ```
 node-sass Techkey/scss/main.scss  Techkey/scss/build/main.css
 ```
+
+<br/>
 
 ### Three.js
 
@@ -196,6 +228,32 @@ three js setup is done in `Techkey\js\MVC\modal.js` using es6 classes
       console.log(error);
     }
   }
+```
+
+<br/>
+
+### scss
+
+The scss code is imported and compiled from `main.scss`<br/>
+
+`Techkey\scss\main.scss`
+
+```scss
+@import "_abstract/root.scss";
+@import "_abstract/typography.scss";
+@import "_base/animations.scss";
+@import "_base/fonts.scss";
+@import "_base/mediaQueries.scss";
+@import "_components/button.scss";
+@import "_components/coutdownTimer.scss";
+@import "_components/form.scss";
+@import "_components/img.scss";
+@import "_components/navBar.scss";
+@import "_components/sidepanel.scss";
+@import "_layout/body.scss";
+@import "_layout/flex.scss";
+@import "_layout/footer.scss";
+@import "_layout/structure.scss";
 ```
 
 ---
