@@ -1,0 +1,88 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+.svg-3D {
+  position: relative;
+  top: 5px;
+}
+
+.ts-opacity__50 {
+  opacity: 0.5;
+}
+.ts-title {
+  margin-bottom: 1.25rem;
+}
+.ts-social-icons {
+  font-size: 120%;
+}
+
+.ts-social-icons a {
+  padding: 0.25rem 0.5rem;
+  color: #9e9e9e;
+}
+section {
+  position: relative;
+}
+
+[class*="btn-outline-"] {
+  box-shadow: none;
+}
+.ts-page-wrapper {
+  height: 100%;
+  transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.ts-page-wrapper > .container {
+  display: table;
+  height: 100%;
+}
+
+#main-content {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+#main-content .ts-content-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#main-content .ts-content-wrapper > .row {
+  width: 100%;
+}
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.float-right {
+  float: right !important;
+}
+.float-none {
+  float: none !important;
+}
+

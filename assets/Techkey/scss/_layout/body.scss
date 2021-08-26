@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body.ts-theme-dark {
+  color: rgb(253, 253, 253);
+  background-color: rgb(49, 49, 47);
+}
+
+body.ts-theme-dark p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.ts-theme-dark .form-control {
+  box-shadow: 0 0 0 0.125rem rgba(255, 255, 255, 0.2);
+}
+
+body.ts-theme-dark .form-control:focus {
+  box-shadow: 0 0 0 0.125rem rgba(255, 255, 255, 0.4);
+}
+
+body.ts-theme-dark .ts-social-icons a {
+  color: #fff;
+  opacity: 0.6;
+}
+
+body.ts-theme-dark .ts-social-icons a:hover {
+  opacity: 1;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/*-------------------------------------------
+  -- Loading Screen
+-------------------------------------------*/
+
+body.has-loading-screen:before {
+  background-color: #000;
+  content: "";
+  height: 100%;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 1.5s ease;
+  opacity: 1;
+}
+
+body.has-loading-screen:after {
+  content: url("../../assets/img/loading.svg");
+  height: 2.5rem;
+  width: 2.5rem;
+  position: fixed;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+  transition: 1.5s ease;
+  top: 0;
+  z-index: 10000;
+}
+
+body {
+  margin: 0;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+body.has-loading-screen.loading-done:before {
+  width: 0;
+}
+
+body.has-loading-screen.loading-done:after {
+  transform: scale(0);
+  opacity: 0;
+}
+
+

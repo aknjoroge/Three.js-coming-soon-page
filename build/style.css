@@ -1,0 +1,1083 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body.ts-side-panel-active .ts-side-panel {
+  transform: translateX(0%);
+}
+
+body.ts-side-panel-active .ts-page-wrapper {
+  transform: translateX(-100%);
+}
+
+body.ts-theme-dark {
+  color: black;
+  background-color: greenyellow;
+}
+
+body.ts-theme-dark p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.ts-theme-dark .form-control {
+  box-shadow: 0 0 0 0.125rem rgba(255, 255, 255, 0.2);
+}
+
+body.ts-theme-dark .form-control:focus {
+  box-shadow: 0 0 0 0.125rem rgba(255, 255, 255, 0.4);
+}
+
+body.ts-theme-dark .ts-social-icons a {
+  color: #fff;
+  opacity: 0.6;
+}
+
+body.ts-theme-dark .ts-social-icons a:hover {
+  opacity: 1;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  font-size: 80%;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+/* NEW */
+
+/***********************************************************************************************************************
+B. Helpers
+***********************************************************************************************************************/
+
+/*-------------------------------------------
+  -- Animations
+-------------------------------------------*/
+
+/* Fade In Up */
+
+@keyframes ts-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1.25rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Fade In Down */
+
+@keyframes ts-fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -1.25rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Fade In Left */
+
+@keyframes ts-fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-1.25rem, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Fade In Right */
+
+@keyframes ts-fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(1.25rem, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Zoom In */
+
+@keyframes ts-zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Zoom In Short */
+
+@keyframes ts-zoomInShort {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/****** Animate Shapes ******/
+
+/* Bounce */
+
+@keyframes ts-bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(2.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Scale */
+
+@keyframes ts-scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*-------------------------------------------
+  -- Borders
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Background
+-------------------------------------------*/
+
+[data-bg-image] {
+  background-size: cover;
+  background-position: 50%;
+}
+
+.ts-background {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+}
+
+.ts-background .ts-background {
+  height: 100%;
+  width: 100%;
+}
+
+.ts-background-image,
+.ts-img-into-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ts-background-image img,
+.ts-img-into-bg img {
+  display: none;
+}
+
+/*-------------------------------------------
+  -- Height
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Margin
+-------------------------------------------*/
+
+/* NEW */
+
+/*-------------------------------------------
+  -- No Gutters - Removes padding from col*
+-------------------------------------------*/
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Opacity
+-------------------------------------------*/
+
+.ts-opacity__50 {
+  opacity: 0.5;
+}
+
+/*-------------------------------------------
+  -- Overflow
+-------------------------------------------*/
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Padding
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Position
+-------------------------------------------*/
+
+/* Top */
+
+/* Right */
+
+/* Bottom */
+
+/* Left */
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Shadow
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Shape Mask
+-------------------------------------------*/
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Typography
+-------------------------------------------*/
+
+a {
+  color: #00c9ee;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: rgb(0, 165, 194);
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6875rem;
+  margin-bottom: 1.875rem;
+  color: rgba(25, 25, 25, 0.6);
+}
+
+/*-------------------------------------------
+  -- Title
+-------------------------------------------*/
+
+.ts-title {
+  margin-bottom: 1.25rem;
+}
+
+/* NEW */
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Utilities
+-------------------------------------------*/
+
+/* Social Icons */
+
+.ts-social-icons {
+  font-size: 120%;
+}
+
+.ts-social-icons a {
+  padding: 0.25rem 0.5rem;
+  color: #9e9e9e;
+}
+
+/* Overlay */
+
+/* Flip x */
+
+/* Flip Y */
+
+/* NEW flip */
+
+/*-------------------------------------------
+  -- Width
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Z-index
+-------------------------------------------*/
+
+/* NEW */
+
+/***********************************************************************************************************************
+C. Components
+***********************************************************************************************************************/
+
+/*-------------------------------------------
+  -- Block
+-------------------------------------------*/
+
+section {
+  position: relative;
+}
+
+/*-------------------------------------------
+  -- Blockquote
+-------------------------------------------*/
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Box
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Buttons
+-------------------------------------------*/
+
+.btn {
+  border-radius: 6.25rem;
+  border-width: 0.125rem;
+  box-shadow: 0.125rem 0.1875rem 0.9375rem rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 0.5rem 1.25rem;
+  position: relative;
+  outline: none !important;
+}
+
+.btn span {
+  transition: 0.3s ease;
+}
+
+.btn .status {
+  bottom: 0;
+  height: 1.375rem;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.5rem;
+}
+
+.btn .status .spinner {
+  left: 0.3125rem;
+  transition: 0.3s ease;
+  top: 0.1875rem;
+  position: absolute;
+  opacity: 0;
+}
+
+.btn.processing span {
+  opacity: 0.2;
+}
+
+.btn.processing .spinner {
+  opacity: 1;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  /*background-color: darken( var(--color-primary), 20% );
+    border-color: darken( var(--color-primary), 20% );*/
+  background-color: #00c9ee;
+  border-color: #00c9ee;
+  box-shadow: 0.125rem 0.1875rem 0.9375rem rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+  background-color: #00c9ee;
+  border-color: #00c9ee;
+  color: #fff;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: rgb(0, 165, 194);
+  border-color: rgb(0, 165, 194);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  background-color: rgb(0, 165, 194);
+  border-color: rgb(0, 143, 168);
+  box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: rgb(0, 165, 194);
+  border-color: rgb(0, 165, 194);
+  box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+  border-color: #00c9ee;
+  color: #00c9ee;
+}
+
+.btn-outline-primary:hover {
+  background-color: #00c9ee;
+  border-color: #00c9ee;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+  background-color: #00c9ee;
+  border-color: #00c9ee;
+  box-shadow: 0 0 0 0.2rem rgba(0, 201, 238, 0.5);
+}
+
+[class*="btn-outline-"] {
+  box-shadow: none;
+}
+
+/*-------------------------------------------
+  -- Card
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Circle
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Forms
+-------------------------------------------*/
+
+form.ts-labels-inside-input .form-group,
+.ts-form.ts-labels-inside-input .form-group {
+  position: relative;
+}
+
+form.ts-labels-inside-input .form-group label,
+.ts-form.ts-labels-inside-input .form-group label {
+  line-height: 2.625rem;
+  left: 0.8125rem;
+  opacity: 0.4;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: 0.3s ease;
+}
+
+form.ts-labels-inside-input .form-group label.focused,
+.ts-form.ts-labels-inside-input .form-group label.focused {
+  top: -2.1875rem;
+  left: 0;
+  font-size: 0.75rem;
+  opacity: 1;
+}
+
+.form-control {
+  border: 0;
+  box-shadow: 0 0 0 0.125rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.125rem;
+  padding: 0.5625rem 0.75rem;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.125rem rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+  margin-bottom: 1.5625rem;
+}
+
+.form-group label {
+  font-size: 0.8125rem;
+}
+
+/*-------------------------------------------
+  -- HR
+-------------------------------------------*/
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Inputs
+-------------------------------------------*/
+
+.ts-inputs__transparent input,
+.ts-inputs__transparent textarea {
+  background-color: transparent;
+  color: #fff;
+}
+
+.ts-inputs__transparent input:active,
+.ts-inputs__transparent input:focus,
+.ts-inputs__transparent textarea:active,
+.ts-inputs__transparent textarea:focus {
+  background-color: transparent;
+  color: #fff;
+}
+
+/*-------------------------------------------
+  -- List
+-------------------------------------------*/
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Loading Screen
+-------------------------------------------*/
+
+body.has-loading-screen:before {
+  background-color: #000;
+  content: "";
+  height: 100%;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 1.5s ease;
+  opacity: 1;
+}
+
+body.has-loading-screen:after {
+  content: url("../../assets/img/loading.svg");
+  height: 2.5rem;
+  width: 2.5rem;
+  position: fixed;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+  transition: 1.5s ease;
+  top: 0;
+  z-index: 10000;
+}
+
+body.has-loading-screen.loading-done:before {
+  width: 0;
+}
+
+body.has-loading-screen.loading-done:after {
+  transform: scale(0);
+  opacity: 0;
+}
+
+/*-------------------------------------------
+  -- Map
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Hero
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Navbar
+-------------------------------------------*/
+
+.navbar {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  transition: 0.3s ease;
+}
+
+.navbar .ts-background {
+  transition: 1s ease;
+}
+
+.navbar .navbar-toggler {
+  outline: none !important;
+  border: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/*XL*/
+
+/*LG*/
+
+/*MD*/
+
+/*SM*/
+
+/*-------------------------------------------
+  -- Page
+-------------------------------------------*/
+
+.ts-page-wrapper {
+  height: 100%;
+  transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.ts-page-wrapper > .container {
+  display: table;
+  height: 100%;
+}
+
+#header,
+#footer {
+  display: table-row;
+  height: 0.0625rem;
+}
+
+#header {
+  vertical-align: top;
+}
+
+#header .navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#main-content {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+#main-content .ts-content-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#main-content .ts-content-wrapper > .row {
+  width: 100%;
+}
+
+#footer {
+  vertical-align: bottom;
+}
+
+/*-------------------------------------------
+  -- Partners
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Plugins
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Progress
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Promo Numbers
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Select
+-------------------------------------------*/
+
+select.form-control {
+  box-shadow: 0.125rem 0.1875rem 0.9375rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  height: 2.8125rem !important;
+  margin-top: -0.125rem;
+  padding: 0.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.0625rem;
+  text-overflow: "";
+}
+
+select.form-control:focus,
+select.form-control:hover {
+  box-shadow: 0.375rem 0.3125rem 1.5625rem rgba(0, 0, 0, 0.2);
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper:before {
+  position: absolute;
+  display: inline-block;
+  font-weight: 900;
+  text-rendering: auto;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  right: 0.9375rem;
+  height: 1.875rem;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f0dd";
+}
+
+/*-------------------------------------------
+  -- Slider
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Tabs
+-------------------------------------------*/
+
+/* NEW */
+
+/***********************************************************************************************************************
+D. Plugins Styles
+***********************************************************************************************************************/
+
+/*-------------------------------------------
+  -- Count Down
+-------------------------------------------*/
+
+.ts-count-down {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 0.375rem 0.3125rem 1.5625rem rgba(0, 0, 0, 0.5);
+}
+
+.ts-count-down div {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.ts-count-down div:last-child .ts-cc-number:after {
+  display: none;
+}
+
+.ts-count-down div .ts-cc-number {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.ts-count-down div .ts-cc-number:after {
+  bottom: 0;
+  content: "\f111";
+  font-weight: 900;
+  font-family: "Font Awesome\ 5 Free";
+  position: absolute;
+  height: 0.625rem;
+  margin: auto;
+  font-size: 0.625rem;
+  top: 0;
+  opacity: 0.2;
+  right: -0.625rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ts-count-down .ts-cc-description {
+  display: block;
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
+
+/*-------------------------------------------
+  -- Magnific Popup
+-------------------------------------------*/
+
+/* overlay at start */
+
+/* overlay animate in */
+
+/* overlay animate out */
+
+/* content at start */
+
+/* content animate it */
+
+/* content animate out */
+
+/*-------------------------------------------
+  -- Owl Carousel
+-------------------------------------------*/
+
+/***********************************************************************************************************************
+E. Template Specific Elements
+***********************************************************************************************************************/
+
+/*-------------------------------------------
+  -- Centered Slider
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Hero Form Floated
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Price Box
+-------------------------------------------*/
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Time Line
+-------------------------------------------*/
+
+/*-------------------------------------------
+  -- Shapes
+-------------------------------------------*/
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Side Panel
+-------------------------------------------*/
+
+.ts-side-panel {
+  font-size: 90%;
+  height: 100%;
+  position: absolute;
+  padding: 1.25rem;
+  overflow-y: scroll;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transform: translateX(100%);
+  transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
+  z-index: 999;
+}
+
+.ts-side-panel h2 {
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.25rem;
+}
+
+.ts-side-panel section {
+  margin-bottom: 6.25rem;
+}
+
+.ts-side-panel .ts-close-side-panel {
+  position: absolute;
+  font-size: 1.875rem;
+  top: 0.625rem;
+  right: 3.125rem;
+  z-index: 1;
+}
+
+/* NEW */
+
+/*-------------------------------------------
+  -- Other
+-------------------------------------------*/
+
+/* Hero slider height */
+
+@media (min-width: 36rem) and (max-width: 47.9375rem) {
+  body.ts-side-panel-active .ts-page-wrapper {
+    transform: translateX(-80%);
+  }
+
+  html {
+    font-size: 85%;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  h2 {
+    font-size: 1.375rem;
+  }
+
+  .ts-count-down {
+    font-size: 3.125rem;
+  }
+
+  .ts-count-down .ts-cc-description {
+    font-size: 0.625rem;
+  }
+
+  .ts-side-panel {
+    padding: 1.25rem;
+    width: 80%;
+  }
+}
+
+@media (min-width: 48rem) and (max-width: 61.9375rem) {
+  body.ts-side-panel-active .ts-page-wrapper {
+    transform: translateX(-70%);
+  }
+
+  html {
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.625rem;
+  }
+
+  .ts-count-down {
+    font-size: 3.125rem;
+  }
+
+  .ts-count-down .ts-cc-description {
+    font-size: 0.75rem;
+  }
+
+  .ts-side-panel {
+    padding: 1.5rem;
+    width: 70%;
+  }
+}
+
+@media (min-width: 62rem) and (max-width: 74.9375rem) {
+  body.ts-side-panel-active .ts-page-wrapper {
+    transform: translateX(-60%);
+  }
+
+  html {
+    font-size: 95%;
+  }
+
+  h1 {
+    font-size: 2.375rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  .ts-count-down {
+    font-size: 3.75rem;
+  }
+
+  .ts-count-down .ts-cc-description {
+    font-size: 1.125rem;
+  }
+
+  .ts-side-panel {
+    padding: 1.75rem;
+    width: 60%;
+  }
+}
+
+@media (min-width: 75rem) {
+  body.ts-side-panel-active .ts-page-wrapper {
+    transform: translateX(-50%);
+  }
+
+  html {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 2.625rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.1875rem;
+  }
+
+  .ts-count-down {
+    font-size: 4.375rem;
+  }
+
+  .ts-count-down .ts-cc-description {
+    font-size: 1.125rem;
+  }
+
+  .ts-side-panel {
+    padding: 2rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 35.9375rem) {
+  h1 {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 36rem) and (max-width: 61.9375rem) {
+  h1 {
+    margin-bottom: 1.25rem;
+  }
+
+  .ts-title {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 62rem) {
+  h1 {
+    margin-bottom: 1.875rem;
+  }
+
+  .ts-title {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 36rem) {
+
+  .ts-side-panel .ts-close-side-panel {
+    top: 1.25rem;
+  }
+}

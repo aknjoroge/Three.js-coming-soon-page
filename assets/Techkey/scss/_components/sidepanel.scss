@@ -1,0 +1,30 @@
+.ts-side-panel {
+ 
+  height: 100%;
+  position: absolute;
+  padding: 1.25rem;
+  overflow-y: scroll;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transform: translateX(100%);
+  transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
+  z-index: 999;
+}
+
+.ts-side-panel h2 {
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.25rem;
+}
+
+.ts-side-panel section {
+  margin-bottom: 6.25rem;
+}
+
+.ts-side-panel .ts-close-side-panel {
+  position: absolute;
+ 
+  top: 0.625rem;
+  right: 3.125rem;
+  z-index: 1;
+}

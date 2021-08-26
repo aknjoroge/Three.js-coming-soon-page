@@ -1,0 +1,11 @@
+Model Information:
+* title:	Notebook Low-Poly Version 3D Model
+* source:	https://sketchfab.com/3d-models/notebook-low-poly-version-3d-model-57a29e53b1f94410b9ba7c7403f9c91e
+* author:	nikhilmohan (https://sketchfab.com/nikhilmohan.1)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Notebook Low-Poly Version 3D Model" (https://sketchfab.com/3d-models/notebook-low-poly-version-3d-model-57a29e53b1f94410b9ba7c7403f9c91e) by nikhilmohan (https://sketchfab.com/nikhilmohan.1) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,23 @@
+{
+  "name": "techkey_coming_soon_page",
+  "version": "2.0.1",
+  "description": "3D layout of Techkey Cybernetics",
+  "main": "index.html",
+  "scripts": {
+    "build-fonts": "purgecss --css assets/font-awesome/css/fontawesome-all.min.css --content index.html --output assets/build",
+    "build-style": "purgecss --css assets/css/style.css --content developmentMarkUp.html assets/js/custom.js --output assets/build",
+    "build-bs4": "purgecss --css assets/bootstrap/css/bootstrap.min.css --content developmentMarkUp.html --output assets/build",
+    "build-sass": "node-sass Techkey/scss/main.scss  Techkey/scss/build/main.css"
+  },
+  "author": "Alexander Karanja",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "purgecss": "^4.0.3",
+    "three": "^0.130.1",
+    "tween.js": "^16.6.0"
+  },
+  "devDependencies": {
+    "dat.gui": "^0.7.7"
+  }
+}
