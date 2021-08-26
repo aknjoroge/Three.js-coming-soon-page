@@ -147,9 +147,26 @@ contains the production files used by index.html, including the purged css.
 
 <h1 id="Installation">Installation</h1>
 
+### Requirements
+
+1. Node
+   > test by running `node -v`
+2. Local Server for running the project, consider the options below
+
+- Live Server extention : Launch a development local Server with live reload feature for static & dynamic pages
+- Mamp or Xamp
+
+<br>
+
 install by running
 
-`npm install`
+```
+npm install
+```
+
+Open the project in a server environment
+
+<br/>
 
 [Back To The Top](#start)
 
