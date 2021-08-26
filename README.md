@@ -1,10 +1,30 @@
+<br/>
+
 <h1 id="start">Coming Soon Page</h1>
 
-![Project Image](project-image-url)
+<p>
+  <a style="margin:15px" href="https://github.com/aknjoroge/coming-soon-page/blob/master/assets/media/one.png">
+    <img src="https://raw.githubusercontent.com/aknjoroge/coming-soon-page/master/assets/media/one.png?token=AOLMUC7XZCJO6JDCHHVGTDLBGCNFU" alt="Logo"  height="80">
+  </a>
+  <a style="margin:15px" href="https://github.com/aknjoroge/coming-soon-page/blob/master/assets/media/two.png">
+    <img src="https://raw.githubusercontent.com/aknjoroge/coming-soon-page/master/assets/media/two.png?token=AOLMUC43P326XDVEWTPKGFLBGCNP6" alt="Logo"   height="80">
+  </a>
+  <a style="margin:15px" href="https://github.com/aknjoroge/coming-soon-page/blob/master/assets/media/three.png">
+    <img src="https://raw.githubusercontent.com/aknjoroge/coming-soon-page/master/assets/media/three.png?token=AOLMUC5CLFNG7MZGT7I2QK3BGCNUA" alt="Logo"   height="80">
+  </a>
+  <a style="margin:15px" href="https://github.com/aknjoroge/coming-soon-page/blob/master/assets/media/four.png">
+    <img src="https://raw.githubusercontent.com/aknjoroge/coming-soon-page/master/assets/media/four.png?token=AOLMUC527ZF2X54K4RXJKD3BGCNVC" alt="Logo"   height="80">
+  </a>
+
+</p>
 
 > This is a coming-soon template with three.js objects and models implemented.
 
+<br/>
+
 ---
+
+<br/>
 
 ### Table of Contents
 
@@ -14,6 +34,8 @@
 - [Installation](#Installation)
 - [Code](#Code)
 - [Author Info](#author-info)
+
+<br/>
 
 ---
 
@@ -35,6 +57,8 @@ The purgedcss is reformatted to scss and compiled using `node-sass`, more descri
 Both html documents contain a form that uses a php document for mailing.
 
 The file structure is explained [here](#files)
+
+[Back To The Top](#start)
 
 ---
 
@@ -63,6 +87,8 @@ The file structure is explained [here](#files)
 ```
 
 <br/>
+
+[Back To The Top](#start)
 
 ---
 
@@ -112,6 +138,8 @@ contains the production files used by index.html, including the purged css.
 - php - includes the email php files
 - scss - includes scss files
 - scss/build/ - contains the compiles scss. scss is compiled by `node-sass` package
+
+[Back To The Top](#start)
 
 ---
 
@@ -256,6 +284,8 @@ The scss code is imported and compiled from `main.scss`<br/>
 @import "_layout/structure.scss";
 ```
 
+[Back To The Top](#start)
+
 ---
 
 ## References
@@ -268,17 +298,23 @@ The scss code is imported and compiled from `main.scss`<br/>
 
 [tween.js](https://github.com/tweenjs/tween.js/)
 
+[Back To The Top](#start)
+
 ---
 
 ## License
 
 MIT License
 
+---
+
 ## Author Info
 
 - Twitter - [@Alexander Karanja](https://twitter.com/aknjoroge)
 
 [Back To The Top](#start)
+
+---
 
 ## Issues
 
